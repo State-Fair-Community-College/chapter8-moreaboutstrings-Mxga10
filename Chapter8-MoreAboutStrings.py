@@ -1,6 +1,6 @@
 # --------------------------------------------
-# Name:
-# Date:
+# Name: Junior Tenyane 
+# Date: 6 April
 # Program: Chapter 8 Practice
 # Description:
 # Complete each section by following the
@@ -19,6 +19,16 @@
 # 4. Use a for loop to print each character in the
 #    string on its own line
 # 5. Print the total length of the string using len()
+
+message = "Hello, World!"
+print(message[0])
+print(message[-1])
+
+for i in message:
+    print(i)
+
+print(len(message))    
+
 print()  # blank line
 
 # ------------------------------------------------
@@ -33,6 +43,17 @@ print()  # blank line
 # 4. Create two separate string variables: first and last
 #    then concatenate them with a comma and space in between
 #    and print the result  (e.g. 'Smith, Jane')
+
+full_name = "Junior Tenyane"
+
+print(full_name[:6])
+print(full_name[6:])
+
+first = full_name[:6]
+last = full_name[6:]
+
+result = last, first
+print(result)
 print()
 
 # ------------------------------------------------
@@ -48,6 +69,12 @@ print()
 #    and print the result
 # 5. Use isupper() to check if it is all uppercase
 #    and print the result
+ask = input("Please enter a word: ")
+print(ask.isalpha())
+print(ask.isdigit())
+print(ask.islower())
+print(ask.isupper())
+
 print()
 
 # ------------------------------------------------
@@ -66,6 +93,15 @@ print()
 #    with 'The' and print the result
 # 7. Use endswith() to check if the sentence ends
 #    with 'dog' and print the result
+
+sentance = "The quick brown fox jumps over the lazy dog"
+print(sentance.lower())
+print(sentance.upper())
+print(sentance.replace('fox', 'cat'))
+print(sentance.find('jumps'))
+print(sentance.startswith('The'))
+print(sentance.endswith('dog'))
+
 print()
 
 # ------------------------------------------------
@@ -82,13 +118,13 @@ print()
 # Fix them so the program works correctly.
 
 full_name = 'marie curie'
-name_parts = full_name.Split()
+name_parts = full_name.split()
 
 print(full_name.upper())
 
-if full_name.replace(' ', '').isAlpha():
+if full_name.replace(' ', '').isalpha():
     print('Contains only letters')
 
 for part in name_parts:
-    print(part.Capitalize())
+    print(part.capitalize())
 print()
